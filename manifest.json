@@ -1,0 +1,15 @@
+{
+  "name": "Jupyter notebook distraction free mode",
+  "description": "🐍 🐍 🐍",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*"
+      ],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": ["tabs", "storage", "activeTab", "scripting"]
+}
